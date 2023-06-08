@@ -13,7 +13,7 @@ interface Column {
 
 interface Todo {
     $id:string,
-    $crratedAt: string,
+     $createdAt: string;
     title:string,
     status:TypedColumn,
 
