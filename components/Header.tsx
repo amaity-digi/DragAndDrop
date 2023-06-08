@@ -11,7 +11,7 @@ import { useModelStore } from '@/store/ModelStore';
 function Header() {
   const openModel = useModelStore((state) => state.openModel);
   const [searchString,setSearchString] = useBoardStore((state) => [
-    state.serachString,
+    state.searchString,
     state.setSearchString,
   ])
   return (
