@@ -11,6 +11,10 @@ type Props ={
     todos: Todo[],
     index : number
 }
+export type ColumnType = {
+  id: TypedColumn;
+  todos: Todo[];
+};
 
 const idToColumnText :{
     [key in TypedColumn] : string;
