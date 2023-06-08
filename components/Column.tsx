@@ -30,7 +30,7 @@ const idToColumnText :{
 
 function Column({id,todos,index}: Props) {
 
-  const [searchString] = useBoardStore((state) => [state.serachString]);
+  const [searchString] = useBoardStore((state) => [state.searchString]);
   const openModel = useModelStore((state) => state.openModel);
   console.log(openModel);
   const isDoneColumn = id === 'done'; 
