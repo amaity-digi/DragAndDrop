@@ -4,7 +4,7 @@
 import { useBoardStore } from '@/store/BoardStore';
 import React, { useEffect } from 'react'
 import { DragDropContext , DropResult, Droppable } from 'react-beautiful-dnd';
-import Column from './Column';
+import Column, { ColumnType } from './Column';
 
 
 function Board() {
@@ -42,12 +42,12 @@ function Board() {
         const startColumnIndex = columns[Number(source.droppableId)];
         const lastColumnIndex = columns[Number(destination.droppableId)];
         
-        const startCol: Column ={
+        const startCol: ColumnType ={
           id: startColumnIndex[0],
           todos: startColumnIndex[1].todos
         }
 
-        const lastCol: Column ={
+        const lastCol: ColumnType ={
           id: lastColumnIndex[0],
           todos: lastColumnIndex[1].todos
         }
