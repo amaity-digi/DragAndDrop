@@ -3,7 +3,7 @@
 
 import { useBoardStore } from '@/store/BoardStore';
 import React, { useEffect } from 'react'
-import { DragDropContext , Draggable, DropResult, Droppable } from 'react-beautiful-dnd';
+import { DragDropContext , DropResult, Droppable } from 'react-beautiful-dnd';
 import Column from './Column';
 
 
